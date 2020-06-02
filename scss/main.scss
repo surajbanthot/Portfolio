@@ -8,6 +8,7 @@
 body {
   font-family: "Cairo", sans-serif;
   line-height: 1.6;
+  background: #fff;
 }
 
 a {
@@ -27,4 +28,14 @@ h4 {
 
 img {
   width: 100%;
+}
+
+// Header
+
+#header{
+    &-home{
+        background: $bg-image no-repeat center right / cover;
+        height: 100vh;
+        color: white;
+    }
 }
