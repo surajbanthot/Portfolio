@@ -1,4 +1,4 @@
-@import "config";
+// General Styles
 
 * {
   margin: 0;
@@ -8,34 +8,5 @@
 body {
   font-family: "Cairo", sans-serif;
   line-height: 1.6;
-  background: #fff;
-}
-
-a {
-  text-decoration: none;
-  color: $dark-color;
-}
-
-ul {
-  list-style: none;
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-
-img {
-  width: 100%;
-}
-
-// Header
-
-#header{
-    &-home{
-        background: $bg-image no-repeat center right / cover;
-        height: 100vh;
-        color: white;
-    }
+  background: $light-color;
 }
