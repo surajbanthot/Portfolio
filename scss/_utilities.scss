@@ -1,6 +1,6 @@
 .container {
   max-width: $website-width;
-  padding: 0 15rem;
+  padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
 }
@@ -37,6 +37,28 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: $main-color;
+}
+
+
+// Backgrounds
+
+.bg{
+    &-main{
+        background:$main-color;
+        color:set-text-color($main-color);
+    }
+       &-light{
+        background:$light-color;
+        color:set-text-color($light-color);
+    }
+       &-dark{
+        background:$dark-color;
+        color:set-text-color($dark-color);
+    }
+       &-medium{
+        background:$medium-color;
+        color:set-text-color($medium-color);
+    }
 }
 
 .lead {
