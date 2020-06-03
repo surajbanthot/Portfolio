@@ -29,7 +29,7 @@ h4 {
 }
 
 img {
-  width: 100vw;
+  width: 100%;
 }
 
 // logo
@@ -91,6 +91,14 @@ img {
         line-height: 1.2;
       }
     }
+  }
+
+  // header inner
+
+  &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -169,7 +177,7 @@ img {
       &-icon {
         border-radius: 50%;
         background: $dark-color;
-        color:set-text-color($dark-color);
+        color: set-text-color($dark-color);
         padding: 2rem;
         width: 70px;
         height: 70px;
@@ -192,17 +200,90 @@ img {
   }
 }
 
+// About Section
+
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+    }
+    // Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .award-1 {
+      grid-area: aw1;
+    }
+
+    .award-2 {
+      grid-area: aw2;
+    }
+
+    .award-3 {
+      grid-area: aw3;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+
+  // About: B
+
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.3rem;
+
+      div{
+        height: 100%;
+        color:#fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
+  }
+  // About-c
+
+  &-c{
+    .about-logos{
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      grid-gap: 2rem;
+
+      img{
+        width: 70%;
+      }
+    }
+  }
+}
 
 // footer
 
-#main-footer{
+#main-footer {
   background: $dark-color;
   color: #fff;
   height: 5rem;
 
-
-  .footer-content{
-    display:flex;
+  .footer-content {
+    display: flex;
     justify-content: space-between;
     height: 5rem;
     align-items: center;
@@ -216,11 +297,10 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem;
-  
 
-    &:hover{
-      background: $main-color;
-    }
+      &:hover {
+        background: $main-color;
+      }
     }
   }
 }
